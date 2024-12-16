@@ -1,0 +1,21 @@
+{
+    "name": "Next.js Development Container",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+    "forwardPorts": [
+      3000
+    ],
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "typescript.tsdk": "/usr/local/lib/node_modules/typescript/lib",
+          "editor.formatOnSave": true
+        },
+        "extensions": [
+          "esbenp.prettier-vscode",
+          "dbaeumer.vscode-eslint",
+          "msjsdiag.vscode-react-native"
+        ]
+      }
+    },
+    "postCreateCommand": "npm install"
+  }
